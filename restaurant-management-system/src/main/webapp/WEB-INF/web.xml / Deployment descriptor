@@ -1,0 +1,51 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>TableReservationServlet</servlet-name>
+        <servlet-class>com.example.restaurant.controller.TableReservationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TableReservationServlet</servlet-name>
+        <url-pattern>/reserveTable</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OrderProcessingServlet</servlet-name>
+        <servlet-class>com.example.restaurant.controller.OrderProcessingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderProcessingServlet</servlet-name>
+        <url-pattern>/processOrder</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BillingServlet</servlet-name>
+        <servlet-class>com.example.restaurant.controller.BillingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BillingServlet</servlet-name>
+        <url-pattern>/generateBill</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <param-name>dbURL</param-name>
+        <param-value>jdbc:mysql://localhost:3306/restaurant_db</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dbUser</param-name>
+        <param-value>your_db_username</param-value>
+    </context-param>
+    <context-param>
+        <param-name>dbPassword</param-name>
+        <param-value>your_db_password</param-value>
+    </context-param>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>

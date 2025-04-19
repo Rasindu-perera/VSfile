@@ -1,0 +1,36 @@
+# Restaurant Management System
+
+## Project Description
+
+The Restaurant Management System is a web-based application designed to streamline the operations of a restaurant. It allows customers to reserve tables, place orders, and make payments efficiently. The system is built using Java Servlets and JSP for the backend, with a MySQL database for data storage. The frontend is developed using HTML, CSS, and Bootstrap to provide a responsive and user-friendly interface.
+
+### Features
+
+- **Table Reservation**: Customers can reserve tables through waiters who input the table number and their waiter ID.
+- **Order Management**: Customers can view the food menu and place orders via a tab computer, which are then displayed to the chef for preparation.
+- **Billing System**: After the meal, customers receive a referral number to generate their bill at the cashier.
+- **Inventory Management**: The system tracks cooking ingredients and their availability.
+- **Role-Based Dashboards**: Different dashboards for waiters, chefs, and cashiers to manage their respective tasks effectively.
+
+### Project Structure
+
+The project is organized into several packages and directories:
+
+- **Controller**: Contains servlet classes for handling HTTP requests and responses.
+- **DAO**: Contains Data Access Object classes for database interactions.
+- **Model**: Contains Java Beans representing data structures like Customer, Order, Table, Waiter, and InventoryItem.
+- **Util**: Contains utility classes for common functionalities such as database connection management.
+- **Webapp**: Contains all web-related files including JSP pages, CSS, and JavaScript.
+
+### Setup Instructions
+
+1. **Prerequisites**: Ensure you have JDK 22, Apache Tomcat 8 (Jakarta), and MySQL installed on your machine.
+2. **Clone the Repository**: Clone the project repository from the version control system.
+3. **Database Setup**: Create a MySQL database and configure the connection settings in the utility classes.
+4. **Build the Project**: Use Maven to build the project and resolve dependencies.
+5. **Deploy on Tomcat**: Deploy the generated WAR file to the Tomcat server.
+6. **Access the Application**: Open a web browser and navigate to `http://localhost:8080/restaurant-management-system`.
+
+### Conclusion
+
+This Restaurant Management System aims to enhance the dining experience for customers while improving operational efficiency for restaurant staff. It is a comprehensive solution that integrates various functionalities required for effective restaurant management.

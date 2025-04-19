@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <jsp:include page="includes/header.jsp" />
+
+    <div class="container mt-5">
+        <h1 class="text-center">Welcome to Our Restaurant</h1>
+        <p class="text-center">Experience the best dining with us!</p>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Reserve a Table</h5>
+                        <p class="card-text">Call a waiter to reserve your table and enjoy your meal.</p>
+                        <a href="waiter_dashboard.jsp" class="btn btn-primary">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">View Menu</h5>
+                        <p class="card-text">Explore our delicious menu and place your order.</p>
+                        <a href="waiter_dashboard.jsp" class="btn btn-primary">View Menu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Make a Payment</h5>
+                        <p class="card-text">Use your referral number to settle your bill.</p>
+                        <a href="cashier_dashboard.jsp" class="btn btn-primary">Pay Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <jsp:include page="includes/footer.jsp" />
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
